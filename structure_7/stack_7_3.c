@@ -84,7 +84,7 @@ int main()
     char expr[4][80] = { "{A[(i+1)]=0;}", "if((i==0) && (j==0)", "A[(i+1])=0;", "A[i] = f)(;" };
     
     int err, i;
-    printf("이름: 알레셰르 | 학번: 컴퓨터공학과\n");
+    printf("이름: 알레셰르 | 학번: 201968063\n");
     
     for (i = 0; i < 4; i++) {
         err = check_matching(expr[i]);
