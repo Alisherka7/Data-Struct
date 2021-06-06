@@ -1,17 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX_VTXS	256
+#define MAX_VTXS 256
 
 void error(char str[]) {
 	printf("%s \n", str);
 	exit(1);
 }
-
 typedef char VtxData;
-int adj[MAX_VTXS][MAX_VTXS];	//edge 정보를 저장하는 array 
+int adj[MAX_VTXS][MAX_VTXS];	
 int vsize;
-VtxData vdata[MAX_VTXS];		//vertex에 저장할 데이터 
-
+VtxData vdata[MAX_VTXS];	
 int is_empty_graph() {return (vsize==0);}
 int is_full_graph() {return (vsize >= MAX_VTXS);}
 
@@ -93,7 +91,6 @@ int main()
 	printf("DFS ==> ");
 	DFS(0);
 	printf("\n");
-		
 	return 0;
 }
 
